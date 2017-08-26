@@ -14,6 +14,7 @@ import org.apache.commons.io.FileUtils;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class MainActivity extends AppCompatActivity {
     private final int REQUEST_CODE = 20;
@@ -27,11 +28,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        readItems();
         setContentView(R.layout.activity_main);
         lvItems = (ListView) findViewById(R.id.lvItems);
         etNewItem = (EditText) findViewById(R.id.etNewItem);
-        items = new ArrayList<String>();
+        readItems();
         itemsAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, items);
         lvItems.setAdapter(itemsAdapter);
         setupListViewListener();
@@ -86,6 +86,7 @@ public class MainActivity extends AppCompatActivity {
         File todoFile = new File(filesDir, "todo.txt");
         try {
             items = new ArrayList<String>(FileUtils.readLines(todoFile));
+            Collections.sort(items);
         } catch (IOException e) {
             items = new ArrayList<String>();
         }
@@ -101,3 +102,4 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 }
+
