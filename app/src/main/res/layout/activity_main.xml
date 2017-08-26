@@ -14,6 +14,8 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/colorSecondary"
         android:onClick="onAddItem"
         android:text="@string/add"
         tools:layout_editor_absoluteX="276dp"

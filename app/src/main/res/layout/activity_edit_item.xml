@@ -40,6 +40,8 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/et_edit"
         android:text="@string/btn_edit"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/colorSecondary"
         tools:layout_editor_absoluteX="16dp"
         android:layout_below="@+id/et_edit"
         android:layout_alignParentLeft="true"
