@@ -32,7 +32,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='./android_simpleToDo.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
@@ -51,6 +51,8 @@ As part of your pre-work submission, please reflect on the app and answer the fo
 ## Notes
 
 Describe any challenges encountered while building the app.
+
+I sneezed really hard and pulled my lower back muscle. It really hurt and was a biggest challenge that I encountered.
 
 ## License
 
